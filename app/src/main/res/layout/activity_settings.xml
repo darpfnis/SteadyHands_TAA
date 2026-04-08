@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Налаштування"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/etSettingsFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Ім'я"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey_dark"
+            android:padding="12dp"
+            android:background="@drawable/rounded_hint"/>
+
+        <EditText
+            android:id="@+id/etSettingsLastName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Прізвище"
+            android:inputType="textPersonName"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey_dark"
+            android:padding="12dp"
+            android:background="@drawable/rounded_hint"/>
+
+        <EditText
+            android:id="@+id/etUserAge"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:hint="Ваш вік"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey_dark"
+            android:padding="12dp"
+            android:background="@drawable/rounded_hint"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/etUserPhone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:hint="Телефон довіреної особи"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey_dark"
+            android:padding="12dp"
+            android:background="@drawable/rounded_hint"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/etTremorInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Опис тремору..."
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey_dark"
+            android:padding="12dp"
+            android:background="@drawable/rounded_hint"
+            android:lines="3"
+            android:gravity="top"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/btnSaveProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Зберегти дані"
+            android:backgroundTint="@color/blue_main"
+            android:textColor="@color/white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_border"
+            android:layout_marginVertical="20dp"/>
+
+        <TextView
+            android:id="@+id/tvSensitivityValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Чутливість Alpha: 0.20"
+            android:textColor="@color/black"/>
+        <SeekBar
+            android:id="@+id/seekBarSensitivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="80"
+            android:progress="20"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/btnDeleteAllData"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Очистити історію вимірювань"
+            android:textColor="@color/red_sos"/>
+
+        <Button
+            android:id="@+id/btnBackSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Назад"
+            android:backgroundTint="@color/blue_main"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+</ScrollView>

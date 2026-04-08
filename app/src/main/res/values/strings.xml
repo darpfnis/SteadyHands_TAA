@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">SteadyHands TAA</string>
+
+    <string name="nav_home">Головна</string>
+    <string name="nav_analysis">Аналіз</string>
+    <string name="nav_profile">Профіль</string>
+
+    <string name="default_score">10.0</string>
+    <string name="stability_index">Індекс стабільності</string>
+    <string name="start_test_label">Почати тест: Випряміть руку з телефоном максимально рівно</string>
+    <string name="exercise_label">Вправа: Дихання</string>
+
+    <string name="tab_day">День</string>
+    <string name="tab_month">Місяць</string>
+    <string name="tab_year">Рік</string>
+    <string name="no_data_found">За вказаний період даних немає</string>
+
+    <string name="settings_title">Налаштування</string>
+    <string name="delete_data">Видалити всю історію</string>
+    <string name="sensitivity_label">Чутливість фільтра</string>
+</resources>

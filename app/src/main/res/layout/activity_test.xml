@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/testRootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F4F8"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/tvTestStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Натисніть Старт, щоб почати"
+        android:textSize="20sp"
+        android:textColor="#1D3557"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:id="@+id/tvTestTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10.0"
+        android:textSize="80sp"
+        android:textStyle="bold"
+        android:textColor="@color/blue_main"
+        app:layout_constraintBottom_toTopOf="@+id/testProgressBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTestStatus" />
+
+    <ui.OverlayMarker
+        android:id="@+id/overlayMarker"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvCurrentTestScore"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTestTimer" />
+
+    <ProgressBar
+        android:id="@+id/testProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@android:drawable/progress_horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/tvCurrentTestScore"
+        app:layout_constraintTop_toBottomOf="@+id/tvTestTimer" />
+
+    <TextView
+        android:id="@+id/tvCurrentTestScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Поточна стабільність: 10.0"
+        android:textSize="16sp"
+        android:textColor="@color/blue_main"
+        app:layout_constraintBottom_toTopOf="@+id/btnStartTest"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="40dp" />
+
+    <Button
+        android:id="@+id/btnStartTest"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="СТАРТ"
+        android:textSize="18sp"
+        android:backgroundTint="#1D3557"
+        android:textColor="#FFFFFF"
+        app:cardCornerRadius="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="20dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/surface">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Довідка про стан"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary"
+        android:layout_marginBottom="20dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tvInfoContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Завантаження інформації..."
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:textColor="@color/text_primary"/>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnCloseInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Зрозуміло"
+        android:backgroundTint="@color/primary_variant"/>
+
+</LinearLayout>
